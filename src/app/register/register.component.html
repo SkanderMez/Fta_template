@@ -1,0 +1,151 @@
+
+
+<!-- layout-->
+<div id="layout">
+  <app-header></app-header>
+  <!-- Section Area - Content Central -->
+  <section class="content-info">
+
+    <div class="container paddings">
+      <!-- Content Text-->
+      <div class="panel-box block-form">
+        <div class="titles text-center">
+          <h4>REGISTER YOUR EVENT NOW!.</h4>
+        </div>
+
+        <div class="info-panel">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p class="lead">Feel the thrill of seeing a global sporting event in one of the world's most incredible cities. Headlining the calendar is the Rusia World Cup</p>
+            </div>
+          </div>
+
+          <form class="form-horizontal form-theme padding-top-mini">
+            <div class="form-group">
+              <label class="control-label col-sm-2">Event Name</label>
+              <div class="col-sm-10">
+                <input type="text" id="ername" name="ername" class="form-control" placeholder="Type your name" required="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2">Start Date</label>
+              <div class="col-sm-10">
+                <input type="date" id="erdate" name="erdate" class="form-control" required="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2">Sex</label>
+              <div class="col-sm-10">
+                <select id="ersex" name="ersex" class="form-control" required="">
+                  <option value="">Select Sex</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2">Age Limit</label>
+              <div class="col-sm-10">
+                <select id="erage" name="erage" class="form-control" required="">
+                  <option value="">Select Age</option>
+                  <option value="00-10">00-10</option>
+                  <option value="10-20">10-20</option>
+                  <option value="20-30">20-30</option>
+                  <option value="30-40">30-40</option>
+                  <option value="40-50">40-50</option>
+                  <option value="50-60">50-60</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2">City</label>
+              <div class="col-sm-10">
+                <input type="text" id="ercity" name="ercity" class="form-control" placeholder="Type your city" required="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2">Address</label>
+              <div class="col-sm-10">
+                <textarea id="eraddr" name="eraddr" class="form-control" placeholder="Type your address"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2">Event Desctiptions</label>
+              <div class="col-sm-10">
+                <textarea id="erdesc" name="erdesc" class="form-control" placeholder="Type event descriptions"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2">Club Name</label>
+              <div class="col-sm-10">
+                <input type="email" id="ercn" name="ercn" class="form-control" placeholder="Type your club name" required="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2">Contact E-mail</label>
+              <div class="col-sm-10">
+                <input type="email" id="ermail" name="ermail" class="form-control" placeholder="Type your email" required="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2">Contact Number</label>
+              <div class="col-sm-10">
+                <input type="number" id="erphone" name="erphone" class="form-control" placeholder="Type your phone" required="">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="offset-sm-2 col-sm-10">
+                <input type="submit" value="submit" class="bnt btn-iw">
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <!-- End Content Text-->
+    </div>
+
+    <!-- Newsletter -->
+    <div class="section-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="text-center">
+              <h2>Enter your e-mail and <span class="text-resalt">subscribe</span> to our newsletter.</h2>
+              <p>Duis non lorem porta,  eros sit amet, tempor sem. Donec nunc arcu, semper a tempus et, consequat.</p>
+            </div>
+            <form id="newsletterForm" action="http://html.iwthemes.com/sportscup/run/php/mailchip/newsletter-subscribe.php">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="fa fa-envelope"></i>
+                                                </span>
+                    <input class="form-control" placeholder="Your Name" name="name"  type="text" required="required">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="fa fa-envelope"></i>
+                                                </span>
+                    <input class="form-control" placeholder="Your  Email" name="email"  type="email" required="required">
+                    <span class="input-group-btn">
+                                                    <button class="btn btn-primary" type="submit" name="subscribe" >SIGN UP</button>
+                                                 </span>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div id="result-newsletter"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Newsletter -->
+  </section>
+  <!-- End Section Area -  Content Centrasl -->
+
+</div>
+
+<app-footer></app-footer>
